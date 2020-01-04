@@ -1,6 +1,7 @@
 FROM centos
 MAINTAINER Ajay
 RUN cat /etc/*release
+RUN 'yum install java -y'
 RUN mkdir /home/ajay
 WORKDIR /home/ajay
 COPY apache-tomcat-8.5.50/ apache-tomcat-8.5.50/
